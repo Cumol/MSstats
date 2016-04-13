@@ -65,7 +65,7 @@ MaxQtoMSstatsFormat <- function(evidence, annotation,proteinGroups, proteinID="P
 	tempprotein <- proteinGroups
 	
 	### then take proteins which are included
-	infile <- infile[which(infile$Protein.group.IDs %in% unique(tempprotein$id)), ]
+	infile <- infile[which(infile$Protein.Group.IDs %in% unique(tempprotein$id)), ]
 
 	### then use 'protein.IDs' in proteinGroups.txt
 	### because if two 'proteins' in evidence.txt are used in one protein ID, need to use certain protein name in infile.
